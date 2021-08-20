@@ -1,0 +1,1 @@
+{"main":"bhavupdate.js","name":"bhavupdate","version":"1.0.0","description":"","scripts":{"start":"node bhavupdate.js","publish":"nexe bhavupdate.js"},"dependencies":{"express":"^4.17.1","firebase":"^8.7.0","puppeteer":"^10.1.0"},"devDependencies":{"nexe":"^4.0.0-beta.18"}}
