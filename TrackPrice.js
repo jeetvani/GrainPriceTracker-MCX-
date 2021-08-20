@@ -38,7 +38,7 @@ async function run () {
             () => document.querySelector(".acctab2").innerHTML
           );
          let  bhavup1=  bhav.replace('<p>','').replace('</p>','').replace(',','').replace('n','')
-         console.log( "सोयाबीन :"+bhavup1.match(/\d+/)[0]);
+         console.log( "Soyabean :"+bhavup1.match(/\d+/)[0]);
        //chana  
          const chanapage = await browser.newPage();
          await chanapage.goto(chanaurl);
@@ -47,7 +47,7 @@ async function run () {
              () => document.querySelector(".acctab2").innerHTML
            );
           let  chanabhavup1=  chanabhav.replace('<p>','').replace('</p>','').replace(',','').replace('n','').match(/\d+/)[0]
-          console.log("चना :"+ chanabhavup1);
+          console.log("Chana :"+ chanabhavup1);
           //Kapas
           const kapaspage = await browser.newPage();
 await kapaspage.goto(kapasurl);
@@ -56,7 +56,7 @@ const kapasbhav = await kapaspage.evaluate(
     () => document.querySelector(".gr_30").innerText
   );
  let  kapasbhavup1=  kapasbhav.replace('<p>','').replace('</p>','').replace(',','').replace('n','').match(/\d+/)[0]
- console.log("कपास  :"+'Kapas'+ kapasbhavup1*5);
+ console.log("Cotton  :"+'Kapas'+ kapasbhavup1*5);
  //cottonoilcake
  const cottonoilcakepage = await browser.newPage();
  await cottonoilcakepage.goto(cottonoilcakeurl);
@@ -65,7 +65,7 @@ const kapasbhav = await kapaspage.evaluate(
      () => document.querySelector(".acctab2").innerHTML
    );
   let  cottonoilcakebhavup1=  cottonoilcakebhav.replace('<p>','').replace('</p>','').replace(',','').replace('n','').match(/\d+/)[0]
-  console.log("कपास  :"+ cottonoilcakebhavup1);
+  console.log("Cotton Seed OilCake  :"+ cottonoilcakebhavup1);
 //gehu
  //gehu
  const gehupage = await browser.newPage();
